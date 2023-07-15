@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+####ERRORS###
+1.unique prop to every child element
+solution: while providing (movie.id) it worked for banner.js but not for slide and upnext beacuse they have multiple child elements and we wrapped with react fragment then provide to that only.Hulaluya it worked.
+
+2.mapping error
+solution:even the inital array was initialized empty it's still not happening beacuse the category of headermenu and CategoryMovies are not spelled with same spelling.
+
+3.
