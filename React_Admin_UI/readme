@@ -1,0 +1,3 @@
+rechart,tooltip,vite.js,typescript,datagrid foruser from material ui
+slot props:Slots allow us to pass elements to a component and tell the component where these elements should be rendered.
+debounce properties :is used to wait for the result while searching
