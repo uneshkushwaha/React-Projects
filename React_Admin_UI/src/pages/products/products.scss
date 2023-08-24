@@ -1,0 +1,17 @@
+//scss is the syntax for sass
+//sass is a css preprocessor that allows us to write css in a more efficient way,for example we can use variables and functions
+
+.products{
+
+    .info{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+  
+      button{
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+  }

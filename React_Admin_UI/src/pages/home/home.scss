@@ -1,0 +1,54 @@
+//scss is the syntax for sass
+//sass is a css preprocessor that allows us to write css in a more efficient way,for example we can use variables and functions
+
+@import "../../styles/variables.scss";//importing color styles from variables.scss
+ @import "../../styles/responsive.scss";
+
+
+.home{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);//Fr is a fractional unit and 1fr is for 1 part of the available space.4 represents the number of columns
+    grid-auto-rows: minmax(180px, auto);//this helps to customize the height of the rows of the column
+    grid-auto-flow: dense;//this helps to fill the empty spaces in the grid
+  @include xl{
+    grid-template-columns: repeat(4, 1fr);
+  }
+   
+  @include lg{
+    grid-template-columns: repeat(3, 1fr);
+  }
+   
+  @include md{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include sm{
+    grid-template-columns: repeat(120, auto);
+  }
+ 
+   
+    .box{
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid $soft-bg;
+    }
+
+     .box1 {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+  .box4 {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .box7 {
+    grid-column: span 2;
+    grid-row: span 2;
+    @include md{
+      display: none;
+
+    }
+  }
+
+}
